@@ -36,7 +36,14 @@ export default function MovieList(){
            )
         })
     }
+    function getApi(page){
+        axios.get( `https://moviesapi.codingfront.dev/api/v1/movies?page=${page}` )
+        .then(function(response){
+            setMovies(response.data) })
+        .catch(function(error){})
+    }
     function changePage(page){
+            setSearchParams(createSearchParams({page:page}))
             axios.get( `https://moviesapi.codingfront.dev/api/v1/movies?page=${page}` )
                 .then(function(response){
                     setMovies(response.data) })

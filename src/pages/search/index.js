@@ -13,6 +13,7 @@ export default function Search(){
         axios.get(`https://moviesapi.codingfront.dev/api/v1/movies?q=${name.target.value}`)
             .then (function(response){
                 setMovies(response.data)
+                setSearchParams(createSearchParams(name.target.value))
             })
             .catch (function(error){})
             
@@ -42,7 +43,7 @@ export default function Search(){
     return(
         <LayOut>
         <div className="search container" >
-                <input onChange={title} placeholder="Type the movie name" />
+                <input value={searchParams.get("name")?searchParams.get("name"): ""} onChange={title} placeholder="Type the movie name" />
         </div>
         <div className="movies container" style={{padding:"20px 0"}}>
             <ul className="flex flex-wrap space-between">

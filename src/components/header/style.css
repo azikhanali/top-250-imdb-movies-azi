@@ -1,0 +1,18 @@
+.header{
+    padding-top: 15px;
+    width: 100%;
+    z-index: 99;
+    margin-bottom: 50px;
+}
+.header .headerContent h3,h5,i{
+    color:aliceblue;
+}
+.headerContent .logIn i{
+    padding: 0 15px;
+    font-size: 25px;
+}
+.headerContent .logo img{
+    width: 80px;
+    height: 20px;
+    padding: 0 10px;
+}

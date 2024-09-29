@@ -1,0 +1,11 @@
+.heroSection{
+    background-image: url(../../../public/images/imdbmovies3.jfif);
+    background-size: cover;
+    background-position:bottom;
+    height: 350px;
+    margin: 0 auto;
+    width: 75%;
+    padding: 0 15px;
+    display:block;
+    
+}

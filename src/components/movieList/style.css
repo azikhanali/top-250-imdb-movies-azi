@@ -1,0 +1,12 @@
+.imdbList h2{
+    padding: 50px 0 20px 400px;
+}
+    ul li{
+    padding:15px 10px;
+    margin-bottom: 20px;
+}
+h4{
+    margin: 5px 0 10px 0;
+    text-align: left;
+    font-size: 11px;
+}
